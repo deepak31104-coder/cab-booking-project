@@ -6,7 +6,7 @@ import axios from 'axios';
 const BookingContext = createContext();
 
 // API base URL
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://cab-booking-project.onrender.com/api';
 
 export const BookingProvider = ({ children }) => {
   const [bookings, setBookings] = useState([]);

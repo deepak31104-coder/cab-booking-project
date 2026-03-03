@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd swiftcab-fullstack/frontend && npm run build",
+  "outputDirectory": "swiftcab-fullstack/frontend/build",
+  "framework": "react",
+  "env": {
+    "REACT_APP_API_URL": "https://cab-booking-project.onrender.com/api"
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
