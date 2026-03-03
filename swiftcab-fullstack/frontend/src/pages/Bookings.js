@@ -59,7 +59,7 @@ const Bookings = () => {
   useEffect(() => {
     // Refresh bookings when component mounts
     refreshBookings();
-  }, []);
+  }, [fetchBookings]);
   
   const refreshBookings = async () => {
     setIsRefreshing(true);
