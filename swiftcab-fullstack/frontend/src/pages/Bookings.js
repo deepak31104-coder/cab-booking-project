@@ -56,11 +56,6 @@ const Bookings = () => {
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [confirmDialog, setConfirmDialog] = useState({ isOpen: false, id: null });
   
-  useEffect(() => {
-    // Refresh bookings when component mounts
-    refreshBookings();
-  }, [fetchBookings]);
-  
   const refreshBookings = async () => {
     setIsRefreshing(true);
     try {
@@ -72,6 +67,12 @@ const Bookings = () => {
       setIsRefreshing(false);
     }
   };
+  
+  useEffect(() => {
+    // Refresh bookings when component mounts
+    refreshBookings();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   
   const openConfirmDialog = (id) => {
     setConfirmDialog({ isOpen: true, id });
