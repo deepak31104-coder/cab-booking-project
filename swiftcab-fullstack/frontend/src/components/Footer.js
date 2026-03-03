@@ -19,24 +19,27 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="javascript:void(0)" 
                 role="button"
+                tabIndex="0"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-primary transform hover:-translate-y-1 transition-all duration-300"
                 aria-label="Facebook"
               >
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a 
-                href="#" 
+                href="javascript:void(0)" 
                 role="button"
+                tabIndex="0"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-primary transform hover:-translate-y-1 transition-all duration-300"
                 aria-label="Twitter"
               >
                 <i className="fab fa-twitter"></i>
               </a>
               <a 
-                href="#" 
+                href="javascript:void(0)" 
                 role="button"
+                tabIndex="0"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-primary transform hover:-translate-y-1 transition-all duration-300"
                 aria-label="Instagram"
               >
@@ -96,9 +99,9 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="opacity-70">&copy; {currentYear} SwiftCab. All rights reserved.</p>
           <div className="mt-4 flex justify-center space-x-6 text-sm opacity-70">
-            <a href="#" role="button" className="hover:text-white hover:underline">Privacy Policy</a>
-            <a href="#" role="button" className="hover:text-white hover:underline">Terms of Service</a>
-            <a href="#" role="button" className="hover:text-white hover:underline">FAQ</a>
+            <a href="javascript:void(0)" role="button" tabIndex="0" className="hover:text-white hover:underline">Privacy Policy</a>
+            <a href="javascript:void(0)" role="button" tabIndex="0" className="hover:text-white hover:underline">Terms of Service</a>
+            <a href="javascript:void(0)" role="button" tabIndex="0" className="hover:text-white hover:underline">FAQ</a>
           </div>
         </div>
       </div>
